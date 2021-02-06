@@ -1,9 +1,8 @@
 
 
 from django.urls import path
-from .views import main
+from .views import SubredditView
 
 urlpatterns = [
-    # path('admin/', admin.site.urls),
-    path('home',main)
+    path('home',SubredditView.as_view())
 ]
