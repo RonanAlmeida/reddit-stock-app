@@ -15,6 +15,7 @@ import {
   Visibility,
 } from "semantic-ui-react";
 import TableComp from "../Components/TableComp";
+import TableStockPicks from "../Components/TableStockPicks";
 
 function HomePage() {
   const style = {
@@ -97,13 +98,12 @@ function HomePage() {
         <Grid.Column textAlign="center">
           <Button.Group style={{ textAlign: "center" }}>
             {/* <Button   color="red" >Generate Report</Button> */}
-            <Button color="google plus">
+            <Button color="blue">
               <Icon name="chart bar" /> Generate Report
             </Button>
           </Button.Group>
         </Grid.Column>
       </Grid>
-
 
       <Header as="h3" inverted content="" textAlign="center" style={style.h3} />
 
@@ -118,18 +118,30 @@ function HomePage() {
               // left: "0",
               // bottom: "0"
             }}
-            name="chart pie"
+            name="bolt"
             inverted
-            color="blue"
+            color="yellow"
           ></Icon>
         </Header>
       </Divider>
       <Header as="h1" textAlign="center" inverted sub>
         Sentiment Analysis
-
       </Header>
       <Header></Header>
+      <Header as="h2" inverted style={style.h2} textAlign="center">
+        <Icon name="angle double up" inverted color="green"></Icon>
+        Top Stock Picks
+      </Header>
 
+      <Container>
+        <TableStockPicks></TableStockPicks>
+      </Container>
+
+      <Header as="h2" inverted style={style.h2} textAlign="center">
+      <Icon name="file word" inverted color="blue"></Icon>
+
+        Subreddit Submissions Analysis
+      </Header>
       <Container>
         <TableComp></TableComp>
       </Container>
