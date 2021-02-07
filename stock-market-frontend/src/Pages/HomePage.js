@@ -54,8 +54,8 @@ function HomePage() {
   return (
     <div>
       <Header as="h1" inverted style={style.h1} textAlign="center">
-        <Icon size="big" inverted color="blue" name="reddit square" />
-        Reddit Market Analysis
+        <Icon size="big" inverted color="blue" name="rocket" />
+        MarketBuddy
       </Header>
       <Header.Subheader style={{ color: "#A9A9A9	", textAlign: "center" }}>
         {/* Created by Ronan Almeida */}
