@@ -6,7 +6,7 @@ const TableExampleInverted = () => (
     <Table.Header>
       <Table.Row>
         <Table.HeaderCell>Result</Table.HeaderCell>
-        <Table.HeaderCell>User</Table.HeaderCell>
+        <Table.HeaderCell>Description</Table.HeaderCell>
         <Table.HeaderCell>Comment</Table.HeaderCell>
       </Table.Row>
     </Table.Header>
@@ -16,7 +16,7 @@ const TableExampleInverted = () => (
         <Table.Cell>
           <Icon color="green" size="big" name="caret up" />
         </Table.Cell>
-        <Table.Cell>mrPersonX</Table.Cell>
+        <Table.Cell>Bullish</Table.Cell>
         <Table.Cell>None</Table.Cell>
       </Table.Row>
       <Table.Row>

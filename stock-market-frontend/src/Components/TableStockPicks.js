@@ -6,7 +6,7 @@ const TableExampleInverted = () => (
     <Table.Header>
       <Table.Row>
         <Table.HeaderCell>Stock $</Table.HeaderCell>
-        <Table.HeaderCell>Occourance #</Table.HeaderCell>
+        <Table.HeaderCell>Occourance %</Table.HeaderCell>
       </Table.Row>
     </Table.Header>
 

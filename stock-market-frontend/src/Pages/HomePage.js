@@ -14,6 +14,7 @@ import {
   Sidebar,
   Visibility,
 } from "semantic-ui-react";
+import Subreddits from "../Components/Subreddits";
 import TableComp from "../Components/TableComp";
 import TableStockPicks from "../Components/TableStockPicks";
 
@@ -75,35 +76,7 @@ function HomePage() {
         Choose a Subreddit to Analyze
       </Header>
 
-      <Grid>
-        <Grid.Column textAlign="center">
-          <Button.Group style={{ textAlign: "center" }}>
-            <Button inverted color="blue">
-              <Icon name="list" />
-              /r/CanadaPennyStocks
-            </Button>
-            <Button inverted color="blue">
-              <Icon name="list" />
-              /r/BayStreetBets
-            </Button>
-            <Button inverted color="blue">
-              <Icon name="list" />
-              /r/CanadianInvestor
-            </Button>
-          </Button.Group>
-        </Grid.Column>
-      </Grid>
-
-      <Grid>
-        <Grid.Column textAlign="center">
-          <Button.Group style={{ textAlign: "center" }}>
-            {/* <Button   color="red" >Generate Report</Button> */}
-            <Button color="blue">
-              <Icon name="chart bar" /> Generate Report
-            </Button>
-          </Button.Group>
-        </Grid.Column>
-      </Grid>
+      <Subreddits />
 
       <Header as="h3" inverted content="" textAlign="center" style={style.h3} />
 
@@ -112,15 +85,10 @@ function HomePage() {
         <Header as="h2">
           <Icon
             style={{
-              // marginTop: "5em",
               textAlign: "center",
-              // position: "absolute",
-              // left: "0",
-              // bottom: "0"
             }}
-            name="bolt"
+            name="caret down"
             inverted
-            color="yellow"
           ></Icon>
         </Header>
       </Divider>
@@ -138,8 +106,7 @@ function HomePage() {
       </Container>
 
       <Header as="h2" inverted style={style.h2} textAlign="center">
-      <Icon name="file word" inverted color="blue"></Icon>
-
+        <Icon name="file word" inverted color="blue"></Icon>
         Subreddit Submissions Analysis
       </Header>
       <Container>
