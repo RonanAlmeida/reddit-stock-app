@@ -80,69 +80,30 @@ function HomePage() {
 
       <Header as="h3" inverted content="" textAlign="center" style={style.h3} />
 
-      <Divider horizontal>
-        {" "}
-        <Header as="h2">
-          <Icon
-            style={{
-              textAlign: "center",
-            }}
-            name="caret down"
-            inverted
-          ></Icon>
-        </Header>
-      </Divider>
-      <Header as="h1" textAlign="center" inverted sub>
-        Sentiment Analysis
-      </Header>
-      <Header></Header>
-      <Header as="h2" inverted style={style.h2} textAlign="center">
-        <Icon name="angle double up" inverted color="green"></Icon>
-        Top Stock Picks
-      </Header>
-
-      <Container>
-        <TableStockPicks></TableStockPicks>
-      </Container>
-
-      <Header as="h2" inverted style={style.h2} textAlign="center">
-        <Icon name="file word" inverted color="blue"></Icon>
-        Subreddit Submissions Analysis
-      </Header>
-      <Container>
-        <TableComp></TableComp>
-      </Container>
-
+    
+    
       <Segment
         inverted
         color="blue"
-        style={{ margin: "5em 0em 0em", padding: "0.5em 0em" }}
+        style={{ margin: "40em 0em 0em", padding: "0.5em 0em" }}
         vertical
+        
       >
-        <Container textAlign="center">
+        <Container textAlign="center" >
           {/* <Divider inverted section /> */}
           {/* <Image src="/logo.png" centered size="mini" /> */}
-          <List horizontal inverted divided link size="small">
+          <List horizontal inverted divided link size="small" >
             <List.Item
-              as="a"
-              target="_blank"
-              href="https://developer.spotify.com/documentation/web-api/"
+ 
             >
-              Powered by the Spotify Web API
+              Powered by the Reddit API (Praw)
             </List.Item>
             <List.Item as="a" target="_blank" href="https://ronan.tech/">
-              Designed and Developed by Ronan Almeida ©
+              Built with React and Flask
             </List.Item>
-            <List.Item
-              as="a"
-              target="_blank"
-              href="mailto: ronan.almeida@queensu.ca"
-            >
-              Email
-            </List.Item>
-
+ 
             <List.Item as="a" target="_blank" href="https://ronan.tech/">
-              Portfolio Site
+             Designed and Developed by Ronan Almeida
             </List.Item>
           </List>
         </Container>

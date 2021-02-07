@@ -1,68 +1,31 @@
 import React from "react";
 import { Table, Icon } from "semantic-ui-react";
 
-const TableExampleInverted = () => (
-  <Table striped inverted collapsing>
-    <Table.Header>
-      <Table.Row>
-        <Table.HeaderCell>Stock $</Table.HeaderCell>
-        <Table.HeaderCell>Occourance %</Table.HeaderCell>
-      </Table.Row>
-    </Table.Header>
+export const TableStockPicks = ({ tableStockPicks }) => {
+  return (
+    <Table striped inverted collapsing>
+      <Table.Header>
+        <Table.Row>
+          <Table.HeaderCell>Stock $</Table.HeaderCell>
+          <Table.HeaderCell>Occourance %</Table.HeaderCell>
+        </Table.Row>
+      </Table.Header>
 
-    <Table.Body>
-      <Table.Row>
-        <Table.Cell>
-         MEDV
-        </Table.Cell>
-        <Table.Cell>500</Table.Cell>
-      </Table.Row>
-      <Table.Row>
-        <Table.Cell>
-         NUMI
-        </Table.Cell>
-        <Table.Cell>20</Table.Cell>
+      <Table.Body>
+        {
+        tableStockPicks.map((ticks) => {
+          console.log(ticks.ticker)
+          return (
+            <Table.Row key={ticks.ticker}>
+              <Table.Cell>${ticks.ticker}</Table.Cell>
+              <Table.Cell>{ticks.Count}%</Table.Cell>
+            </Table.Row>
+          );
+        })
+        }
+      </Table.Body>
+    </Table>
+  );
+};
 
-      </Table.Row>
-      <Table.Row>
-        <Table.Cell>
-            NANO
-        </Table.Cell>
-        <Table.Cell>10</Table.Cell>
-      </Table.Row>
-      <Table.Row>
-        <Table.Cell>
-            NANO
-        </Table.Cell>
-        <Table.Cell>10</Table.Cell>
-      </Table.Row>
-      <Table.Row>
-        <Table.Cell>
-            NANO
-        </Table.Cell>
-        <Table.Cell>10</Table.Cell>
-      </Table.Row>
-      <Table.Row>
-        <Table.Cell>
-            NANO
-        </Table.Cell>
-        <Table.Cell>10</Table.Cell>
-      </Table.Row>
-      <Table.Row>
-        <Table.Cell>
-            NANO
-        </Table.Cell>
-        <Table.Cell>10</Table.Cell>
-      </Table.Row>
-      <Table.Row>
-        <Table.Cell>
-            NANO
-        </Table.Cell>
-        <Table.Cell>10</Table.Cell>
-      </Table.Row>
-    </Table.Body>
-
-  </Table>
-);
-
-export default TableExampleInverted;
+export default TableStockPicks

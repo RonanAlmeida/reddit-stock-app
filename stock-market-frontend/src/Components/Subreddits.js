@@ -1,5 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { Icon, Button, Grid, Dropdown } from "semantic-ui-react";
+import {
+  Divider,
+  Icon,
+  Button,
+  Grid,
+  Dropdown,
+  Container,
+  Header,
+} from "semantic-ui-react";
+import TableComp from "./TableComp";
+import TableStockPicks from "./TableStockPicks";
 
 const redditOptions = [
   {
@@ -21,9 +31,59 @@ const redditOptions = [
     content: "r/CanadianInvestor",
   },
 ];
+
 function Subreddit() {
   const [ticks, setTicks] = useState([]);
   const [choice, setSub] = useState("");
+
+  function Sub_active(val) {
+    if (Object.keys(ticks).length > 1) {
+      console.log(val.length);
+      return (
+        <div>
+          <Header as="h1" textAlign="center" inverted sub>
+            Sentiment Analysis
+          </Header>
+          <Header></Header>
+          <Header
+            as="h2"
+            inverted
+            style={{
+              textAlign: "center",
+            }}
+            textAlign="center"
+          >
+            <Icon name="angle double up" inverted color="green"></Icon>
+            Top Stock Picks
+          </Header>
+
+          <Container>
+            <TableStockPicks tableStockPicks={ticks}></TableStockPicks>
+          </Container>
+
+          <Header
+            as="h2"
+            inverted
+            style={{
+              margin: "3em 0em 0em",
+              marginBottom: "1em",
+            }}
+            textAlign="center"
+          >
+            <Icon name="file word" inverted color="blue"></Icon>
+            Subreddit Submissions Analysis
+          </Header>
+          <Container>
+            <TableComp></TableComp>
+          </Container>
+        </div>
+      );
+    } else {
+      console.log(val);
+
+      return <div></div>;
+    }
+  }
 
   //   useEffect(() => {
   //     fetch("/get_stock").then((response) =>
@@ -64,7 +124,7 @@ function Subreddit() {
           <Button.Group style={{ margin: "35px" }}>
             <Button
               onClick={() => {
-                const sub_name = {choice}
+                const sub_name = { choice };
                 const requestOptions = {
                   method: "POST",
                   headers: { "Content-Type": "application/json" },
@@ -73,9 +133,9 @@ function Subreddit() {
                 fetch("/get_stocks", requestOptions)
                   .then((response) => response.json())
                   .then((data) => {
-                      console.log(data)
-                    console.log(data['tickers'][0]);
-                    setTicks(data['tickers'][0])
+                    console.log(data);
+                    console.log(data["tickers"][0]);
+                    setTicks(data["tickers"][0]);
                   });
               }}
               color="blue"
@@ -86,6 +146,20 @@ function Subreddit() {
           </Button.Group>
         </Grid.Column>
       </Grid>
+      <Divider horizontal>
+        {" "}
+        <Header as="h2">
+          <Icon
+            style={{
+              textAlign: "center",
+            }}
+            name="caret down"
+            inverted
+          ></Icon>
+        </Header>
+      </Divider>
+
+      <Sub_active val={ticks}></Sub_active>
     </div>
   );
 }
