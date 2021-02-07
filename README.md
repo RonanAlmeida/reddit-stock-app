@@ -13,3 +13,13 @@ A tool created to aid retail investors by analyzing various stock based subreddi
 
 1. CD Into the BackEnd Flask Dir
 -> ```flask run ```
+
+##  Preview Images:
+
+
+<p float="left">
+  <img src="https://raw.githubusercontent.com/RonanAlmeida/stock-analysis-hackaton/main/design_assets/bigone.png">
+<img src="https://raw.githubusercontent.com/RonanAlmeida/stock-analysis-hackaton/main/design_assets/rlrly-don.png">
+<img src="https://raw.githubusercontent.com/RonanAlmeida/stock-analysis-hackaton/main/design_assets/final.png">
+
+ </p>
