@@ -1,13 +1,13 @@
-import {useEffect,useState} from 'react'
+import { useEffect, useState } from "react";
 import "./App.css";
 import HomePage from "./Pages/HomePage";
 import "semantic-ui-css/semantic.min.css";
 
 function App() {
-  const [ticks, setTicks] = useState([])
+  const [ticks, setTicks] = useState([]);
 
   useEffect(() => {
-    fetch('/get_stock_analysis').then(response => 
+    fetch('/get_stock_analysis').then(response =>
       response.json().then(data => {
         // setTicks(data)
         // console.log(data)
@@ -17,11 +17,11 @@ function App() {
   }, [])
   console.log(ticks)
 
-  return(
-  <div className="App">
-    <HomePage></HomePage>
-
-  </div>)
+  return (
+    <div className="App">
+      <HomePage></HomePage>
+    </div>
+  );
 }
 
 export default App;
