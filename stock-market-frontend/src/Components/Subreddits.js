@@ -8,6 +8,7 @@ import {
   Container,
   Header,
 } from "semantic-ui-react";
+import PieChart from "./PieChart";
 import TableComp from "./TableComp";
 import TableStockPicks from "./TableStockPicks";
 
@@ -35,6 +36,8 @@ const redditOptions = [
 function Subreddit() {
   const [ticks, setTicks] = useState([]);
   const [choice, setSub] = useState("");
+  const [arrkeys, setKeys] = useState([]);
+
 
   function Sub_active(val) {
     if (Object.keys(ticks).length > 1) {
@@ -58,9 +61,22 @@ function Subreddit() {
           </Header>
 
           <Container>
-            <TableStockPicks tableStockPicks={ticks}></TableStockPicks>
           </Container>
 
+          <Header
+            as="h1"
+            // content=""
+            // style={style.h3}
+            textAlign="center"
+          />
+          <Grid container columns={2} stackable>
+            <Grid.Column>
+            <TableStockPicks tableStockPicks={ticks}></TableStockPicks>
+            </Grid.Column>
+            <Grid.Column>
+            <PieChart pieChart={arrkeys}></PieChart>
+            </Grid.Column>
+          </Grid>
           <Header
             as="h2"
             inverted
@@ -136,6 +152,8 @@ function Subreddit() {
                     console.log(data);
                     console.log(data["tickers"][0]);
                     setTicks(data["tickers"][0]);
+                    setKeys(data['tickers'][2])
+
                   });
               }}
               color="blue"
