@@ -16,24 +16,25 @@ const TableExampleInverted = () => (
         <Table.Cell>
           <Icon color="green" size="big" name="caret up" />
         </Table.Cell>
-        <Table.Cell>Bullish</Table.Cell>
-        <Table.Cell>None</Table.Cell>
+        <Table.Cell>Buy</Table.Cell>
+        <Table.Cell>
+          Some more digging into $FIRE. Looks like the shorts have been at it
+          for a while. Explains the huge volume
+        </Table.Cell>
       </Table.Row>
       <Table.Row>
         <Table.Cell>
           <Icon color="red" size="big" name="caret down" />
         </Table.Cell>
-        <Table.Cell>Approved</Table.Cell>
-        <Table.Cell>
-          Type "help", "copyright", "credits" or "license" for more information.
-        </Table.Cell>
+        <Table.Cell>Sell</Table.Cell>
+        <Table.Cell>Zachs has BB price target of $2 USD now</Table.Cell>
       </Table.Row>
       <Table.Row>
         <Table.Cell>
           <Icon color="green" size="big" name="caret up" />
         </Table.Cell>
-        <Table.Cell>Denied</Table.Cell>
-        <Table.Cell>SyntaxError: 'return' outside function</Table.Cell>
+        <Table.Cell>Buy</Table.Cell>
+        <Table.Cell>GBLT.V GBLTF Profitable Penny Stoc</Table.Cell>
       </Table.Row>
     </Table.Body>
 
@@ -43,9 +44,55 @@ const TableExampleInverted = () => (
           {" "}
           <Icon color="red" size="big" name="caret down" />
         </Table.HeaderCell>
-        <Table.HeaderCell>2 Approved</Table.HeaderCell>
-        <Table.HeaderCell >Type "help", "copyright", "credits" or "license" for more information.</Table.HeaderCell>
+        <Table.HeaderCell>Sell</Table.HeaderCell>
+        <Table.HeaderCell>
+        FIRE.WT - Why I choose warrants up $1 CDN today and there are 10 posts about FIRE
+        </Table.HeaderCell>
       </Table.Row>
+      <Table.Row>
+        <Table.HeaderCell>
+          {" "}
+          <Icon color="red" size="big" name="caret down" />
+        </Table.HeaderCell>
+        <Table.HeaderCell>Sell</Table.HeaderCell>
+        <Table.HeaderCell>
+        FIRE.WT - Why I choose warrants up $1 CDN today and there are 10 posts about FIRE
+        </Table.HeaderCell>
+        
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>
+          <Icon color="green" size="big" name="caret up" />
+        </Table.Cell>
+        <Table.Cell>Buy</Table.Cell>
+        <Table.Cell>GBLT.V GBLTF Profitable Penny Stoc</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>
+          <Icon color="green" size="big" name="caret up" />
+        </Table.Cell>
+        <Table.Cell>Buy</Table.Cell>
+        <Table.Cell>GBLT.V GBLTF Profitable Penny Stoc</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>
+          <Icon color="green" size="big" name="caret up" />
+        </Table.Cell>
+        <Table.Cell>Buy</Table.Cell>
+        <Table.Cell>GBLT.V GBLTF Profitable Penny Stoc</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.HeaderCell>
+          {" "}
+          <Icon color="red" size="big" name="caret down" />
+        </Table.HeaderCell>
+        <Table.HeaderCell>Sell</Table.HeaderCell>
+        <Table.HeaderCell>
+        FIRE.WT - Why I choose warrants up $1 CDN today and there are 10 posts about FIRE
+        </Table.HeaderCell>
+        
+      </Table.Row>
+      
     </Table.Footer>
   </Table>
 );
