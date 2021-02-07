@@ -46,7 +46,7 @@ const TableExampleInverted = () => (
         </Table.HeaderCell>
         <Table.HeaderCell>Sell</Table.HeaderCell>
         <Table.HeaderCell>
-        FIRE.WT - Why I choose warrants up $1 CDN today and there are 10 posts about FIRE
+      MSFT and APPL are down MemeStocks have gone too far
         </Table.HeaderCell>
       </Table.Row>
       <Table.Row>
@@ -72,7 +72,7 @@ const TableExampleInverted = () => (
           <Icon color="green" size="big" name="caret up" />
         </Table.Cell>
         <Table.Cell>Buy</Table.Cell>
-        <Table.Cell>GBLT.V GBLTF Profitable Penny Stoc</Table.Cell>
+        <Table.Cell>Penny Stocks are SOARING BUY BUY BUY</Table.Cell>
       </Table.Row>
       <Table.Row>
         <Table.Cell>
