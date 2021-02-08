@@ -22,7 +22,7 @@ main = Blueprint('main',__name__)
 
 def create_subreddit(client_id,client_secret,user_agent,sub_name):
     reddit = praw.Reddit(client_id=client_id,client_secret=client_secret,user_agent=user_agent)
-    sub_reddit = reddit.subreddit(sub_name).hot(limit=800)
+    sub_reddit = reddit.subreddit(sub_name).hot(limit=400)
     return sub_reddit
 
 def find_ticker_counter(subreddit):

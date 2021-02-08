@@ -6,15 +6,15 @@ const TableExampleInverted = () => (
     <Table.Header>
       <Table.Row>
         <Table.HeaderCell>Result</Table.HeaderCell>
-        <Table.HeaderCell>Description</Table.HeaderCell>
-        <Table.HeaderCell>Comment</Table.HeaderCell>
+        <Table.HeaderCell>Classification</Table.HeaderCell>
+        <Table.HeaderCell>Post</Table.HeaderCell>
       </Table.Row>
     </Table.Header>
 
     <Table.Body>
       <Table.Row>
         <Table.Cell>
-          <Icon color="green" size="big" name="caret up" />
+          <Icon color="green" size="big" name="caret up" /> 
         </Table.Cell>
         <Table.Cell>Buy</Table.Cell>
         <Table.Cell>
@@ -34,7 +34,7 @@ const TableExampleInverted = () => (
           <Icon color="green" size="big" name="caret up" />
         </Table.Cell>
         <Table.Cell>Buy</Table.Cell>
-        <Table.Cell>GBLT.V GBLTF Profitable Penny Stoc</Table.Cell>
+        <Table.Cell> $FIRE From $2.4k to $82k in about 2 months.</Table.Cell>
       </Table.Row>
     </Table.Body>
 
@@ -79,7 +79,7 @@ const TableExampleInverted = () => (
           <Icon color="green" size="big" name="caret up" />
         </Table.Cell>
         <Table.Cell>Buy</Table.Cell>
-        <Table.Cell>GBLT.V GBLTF Profitable Penny Stoc</Table.Cell>
+        <Table.Cell>High Tide ($HITI) Discussions for Week of Feb 8th</Table.Cell>
       </Table.Row>
       <Table.Row>
         <Table.HeaderCell>
@@ -88,7 +88,7 @@ const TableExampleInverted = () => (
         </Table.HeaderCell>
         <Table.HeaderCell>Sell</Table.HeaderCell>
         <Table.HeaderCell>
-        FIRE.WT - Why I choose warrants up $1 CDN today and there are 10 posts about FIRE
+        European Metals ($ERPNF) - Speculating
         </Table.HeaderCell>
         
       </Table.Row>

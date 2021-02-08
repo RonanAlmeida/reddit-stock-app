@@ -26,10 +26,10 @@ const redditOptions = [
     content: "r/BayStreetBets",
   },
   {
-    key: "WallStreetBets",
-    text: "r/WallStreetBets",
-    value: "WallStreetBets",
-    content: "r/WallStreetBets",
+    key: "PennyStocks",
+    text: "r/PennyStocks",
+    value: "Pennystocks",
+    content: "r/PennyStocks",
   },
 ];
 
