@@ -16,7 +16,7 @@ Inorder for this web app to work, both the frontend and backend need to run serv
 2. CD Into the BackEnd Flask Dir -> ```pipenv shell ```
 3. Once the virtual enviroment has started  ```set FLASK_APP=api```
 4. ```set FLASK_DEBUG=1```
-6. Finally run the server ->  -> ```flask run``` 
+6. Finally run the server  -> ```flask run``` 
 
 ##  Preview Images:
 
