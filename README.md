@@ -3,16 +3,17 @@ A tool created to aid retail investors by analyzing various stock based subreddi
 
 
 
-# Requirements.
+# Requirements:
 1. Flask
 2. React
 
-# To Run.
+# To Run:
 1. CD Into the FrontEnd React Dir
 -> ```npm start ```
 
-1. CD Into the BackEnd Flask Dir
--> ```flask run ```
+2. CD Into the BackEnd Flask Dir
+-> ```pipenv shell ```
+3. Once the virtual enviroment has started -> ```flask run``` 
 
 ##  Preview Images:
 
