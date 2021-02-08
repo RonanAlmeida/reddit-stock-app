@@ -22,8 +22,9 @@ Inorder for this web app to work, both the frontend and backend need to run serv
 
 
 <p float="left">
-  <img src="https://raw.githubusercontent.com/RonanAlmeida/stock-analysis-hackaton/main/design_assets/bigone.png">
-<img src="https://raw.githubusercontent.com/RonanAlmeida/stock-analysis-hackaton/main/design_assets/rlrly-don.png">
-<img src="https://raw.githubusercontent.com/RonanAlmeida/stock-analysis-hackaton/main/design_assets/final.png">
+  <img src="https://raw.githubusercontent.com/RonanAlmeida/stock-analysis-hackaton/main/design_assets/mbuddy1.png">
+<img src="https://raw.githubusercontent.com/RonanAlmeida/stock-analysis-hackaton/main/design_assets/mbuddy2.png">
+<img src="https://raw.githubusercontent.com/RonanAlmeida/stock-analysis-hackaton/main/design_assets/mbuddy3.png">
+<img src="https://raw.githubusercontent.com/RonanAlmeida/stock-analysis-hackaton/main/design_assets/mbuddy4.png">
 
  </p>
