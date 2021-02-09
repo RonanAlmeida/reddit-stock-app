@@ -8,7 +8,7 @@ A tool created to aid retail investors by analyzing various stock based subreddi
 - React
 
 # Run:
-For this web app to work, both the frontend and backend need to run servers at the same time.
+For this web app to work, both the frontend and backend need to run servers simultaneously.
 
 - Frontend Server
    - ```npm start ```
