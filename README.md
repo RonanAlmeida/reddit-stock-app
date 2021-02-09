@@ -7,14 +7,16 @@ A tool created to aid retail investors by analyzing various stock based subreddi
 - Flask 
 - React
 
-# To Run:
-Inorder for this web app to work, both the frontend and backend need to run servers at the same time.
+# Run:
+For this web app to work, both the frontend and backend need to run servers at the same time.
 
-1. CD Into the FrontEnd React Dir
--> ```npm start ```
+- Frontend Server
+   - ```npm start ```
 
-2. CD Into the BackEnd Flask Dir -> ```pipenv shell ```
-3. Once the virtual enviroment has started  ```set FLASK_APP=api```
+
+- Backend Flask API
+2. CD Into the Backend Flask Dir: ```pipenv shell ```
+3. Once the virtual enviroment has been initalized:  ```set FLASK_APP=api```
 4. ```set FLASK_DEBUG=1```
 6. Finally run the server  -> ```flask run``` 
 
