@@ -1,4 +1,4 @@
-# MarketBuddy
+# Reddit Stock App
 A tool created to aid retail investors by analyzing various stock based subreddits, generating top stock picks, and using NLP sentiment analysis to classify whether posts in the subreddit are bullish or bearish.
 
 
