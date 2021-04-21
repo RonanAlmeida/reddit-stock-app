@@ -1,13 +1,8 @@
 # Reddit Stock App
 A tool created to aid retail investors by analyzing various stock based subreddits, generating top stock picks, and using NLP sentiment analysis to classify whether posts in the subreddit are bullish or bearish.
 
-
-
-# Requirements:
-- Flask 
-- React
-
-# Run:
+# Requirements 
+This application is built using Flask as the Backend and React.js for the frontend.
 For this web app to work, both the frontend and backend need to run servers simultaneously.
 
 - Frontend Server
